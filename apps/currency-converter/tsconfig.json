@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.app.json",
+  // Override: Don't Exclude test files in dev for proper editor support
+  "exclude": ["node_modules", "dist", "libs/schematics/src/**/files/**/*.ts"]
+}

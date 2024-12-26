@@ -1,0 +1,17 @@
+{
+  "name": "@sdk/ddd",
+  "description": "Interfaces and classes for Domain Driven Design architecture",
+  "packageManager": "yarn@4.5.3",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=16",
+    "npm": "^6.0.0"
+  },
+  "dependencies": {
+    "lodash.set": "^4.3.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/lodash.set": "^4.3.9"
+  }
+}

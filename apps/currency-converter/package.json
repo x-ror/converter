@@ -1,0 +1,27 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "format": "biome check --write .",
+    "build": "../../node_modules/.bin/nest build currency-converter",
+    "start": "cd ../../ && yarn run nest start currency-converter",
+    "start:debug": "yarn start --debug --watch | pino-pretty --config ../../.pino-prettyrc",
+    "start:docker:debug": "yarn start --debug 0.0.0.0:9229 --watch | pino-pretty --config ../../.pino-prettyrc",
+    "start:dev": "yarn start --watch | pino-pretty --config ../../.pino-prettyrc",
+    "test": "NODE_ENV=test yarn run jest --config ./jest.config.ts",
+    "test-e2e": "NODE_ENV=test yarn run jest --config ./jest-e2e.config.ts --runInBand"
+  },
+  "dependencies": {
+    "pino-pretty": "^13.0.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": "^6.11.0 || ^7.5.6",
+    "yarn": ">=4"
+  }
+}

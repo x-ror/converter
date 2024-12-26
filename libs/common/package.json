@@ -1,0 +1,16 @@
+{
+  "name": "@sdk/common",
+  "version": "1.0.0",
+  "description": "Common",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "nestjs-pino": "^4.1.0",
+    "pino-http": "^10.3.0"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": "^6.11.0 || ^7.5.6",
+    "yarn": ">=4"
+  },
+  "packageManager": "yarn@4.5.3"
+}

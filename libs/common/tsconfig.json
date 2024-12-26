@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "lib": ["es2020"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "outDir": "../../dist/libs/common",
+    "strict": false
+  },
+  "include": ["index.ts"],
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+}

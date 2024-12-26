@@ -1,0 +1,16 @@
+{
+  "name": "@sdk/nextjs",
+  "description": "Interfaces and classes for NestJS",
+  "packageManager": "yarn@4.5.3",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=16",
+    "npm": "^6.0.0"
+  },
+  "dependencies": {
+    "ioredis": "5.4.2"
+  },
+  "devDependencies": {
+    "@types/ioredis": "^5.0.0"
+  }
+}

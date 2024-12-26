@@ -1,0 +1,2 @@
+export const CURRENCY_REPO = Symbol('CURRENCY_REPO');
+export const CURRENCY_CACHE_SERVICE = Symbol('CURRENCY_CACHE_SERVICE');

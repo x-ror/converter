@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": false,
+    "useUnknownInCatchVariables": false,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "declaration": false,
+    "resolveJsonModule": true,
+    "outDir": "../../dist",
+    "paths": {
+      "@sdk/common": ["libs/common/src"],
+      "@sdk/common/*": ["libs/common/src/*"],
+      "@sdk/ddd": ["libs/ddd/src"],
+      "@sdk/ddd/*": ["libs/ddd/src/*"],
+      "@sdk/nestjs": ["libs/nestjs/src"],
+      "@sdk/nestjs/*": ["libs/nestjs/src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+}
