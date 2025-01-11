@@ -1,5 +1,3 @@
-import type { CurrencyCodeVo } from '../domain';
-
 export interface ICurrencyRate {
   currencyCodeA: number;
   currencyCodeB: number;
@@ -9,5 +7,5 @@ export interface ICurrencyRate {
 }
 
 export interface ICurrencyRepository {
-  getCurrencyRate(from: CurrencyCodeVo, to: CurrencyCodeVo): Promise<number>;
+  getCurrencyData(): Promise<ICurrencyRate[]>;
 }
