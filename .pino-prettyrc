@@ -1,0 +1,7 @@
+{
+  "$schema": "./.pino-pretty-schema.json",
+  "timestampKey": "time",
+  "messageFormat": "{msg} {message}",
+  "ignore": "env,message",
+  "colorize": true
+}

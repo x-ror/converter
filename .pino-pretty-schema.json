@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "colorize": {
+      "type": "boolean"
+    },
+    "crlf": {
+      "type": "boolean"
+    },
+    "errorLikeObjectKeys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "errorProps": {
+      "type": "string"
+    },
+    "levelFirst": {
+      "type": "boolean"
+    },
+    "messageKey": {
+      "type": "string"
+    },
+    "levelKey": {
+      "type": "string"
+    },
+    "messageFormat": {
+      "type": "string"
+    },
+    "timestampKey": {
+      "type": "string"
+    },
+    "translateTime": {
+      "type": "boolean"
+    },
+    "ignore": {
+      "type": "string"
+    },
+    "include": {
+      "type": "string"
+    },
+    "hideObject": {
+      "type": "boolean"
+    },
+    "singleLine": {
+      "type": "boolean"
+    },
+    "config": {
+      "type": "string"
+    },
+    "customColors": {
+      "type": "string"
+    },
+    "customLevels": {
+      "type": "string"
+    },
+    "levelLabel": {
+      "type": "string"
+    },
+    "minimumLevel": {
+      "type": "string"
+    },
+    "useOnlyCustomProps": {
+      "type": "boolean"
+    },
+    "destination": {
+      "type": "integer"
+    },
+    "sync": {
+      "type": "boolean"
+    },
+    "append": {
+      "type": "boolean"
+    },
+    "mkdir": {
+      "type": "boolean"
+    }
+  }
+}

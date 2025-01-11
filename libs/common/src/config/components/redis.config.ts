@@ -2,7 +2,7 @@ import type { RedisOptions } from 'ioredis';
 import Joi from 'joi';
 
 import { registerAs } from '@nestjs/config';
-import { MILLISECONDS_IN_SECOND, isEnvTruthful } from '@sdk/common';
+import { isEnvTruthful } from '@sdk/common';
 
 export interface RedisConfig extends RedisOptions {
   ttl: number;
@@ -28,5 +28,4 @@ export const redisValidation = {
   REDIS_CACHE_TTL: Joi.number().default(300),
   REDIS_TLS: Joi.boolean().default(false),
   REDIS_DB: Joi.number().default(0),
-  REDIS_LOGGING_TIMEOUT: Joi.number().default(10 * MILLISECONDS_IN_SECOND),
 };

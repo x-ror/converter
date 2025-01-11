@@ -1179,6 +1179,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sdk/common@workspace:libs/common"
   dependencies:
+    "@types/lodash.omit": "npm:^4.5.9"
+    lodash.omit: "npm:^4.5.0"
     nestjs-pino: "npm:^4.1.0"
     pino-http: "npm:^10.3.0"
   languageName: unknown
@@ -1200,6 +1202,7 @@ __metadata:
   dependencies:
     "@types/ioredis": "npm:^5.0.0"
     ioredis: "npm:5.4.2"
+    nestjs-request-context: "npm:3.0.0"
   languageName: unknown
   linkType: soft
 
@@ -1477,6 +1480,15 @@ __metadata:
   dependencies:
     "@types/lodash": "npm:*"
   checksum: 10c0/6db28cacf165d55421fbf2970ccfb1682a7b82b743bb7aba4398fa8ab98f1711fca2fe4afa1aa2b7b4afb3eff76c8aca13b22206f5efeb038d99e41300589bca
+  languageName: node
+  linkType: hard
+
+"@types/lodash.omit@npm:^4.5.9":
+  version: 4.5.9
+  resolution: "@types/lodash.omit@npm:4.5.9"
+  dependencies:
+    "@types/lodash": "npm:*"
+  checksum: 10c0/3b60c8ee8e9a691392d9a3ceabb32c85f888784bd3307eac3de01aeb7ff37383dc8899f027fe852641f5e0f56158fb19785cc3d20a4922e85b5810f14cba23f6
   languageName: node
   linkType: hard
 
@@ -4777,6 +4789,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.omit@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.omit@npm:4.5.0"
+  checksum: 10c0/3808b9b6faae35177174b6ab327f1177e29c91f1e98dcbccf13a72a6767bba337306449d537a4e0d8a33d2673f10d39bc732e30c4b803274ea0c1168ea60e549
+  languageName: node
+  linkType: hard
+
 "lodash.set@npm:^4.3.2":
   version: 4.3.2
   resolution: "lodash.set@npm:4.3.2"
@@ -5194,6 +5213,15 @@ __metadata:
     "@nestjs/common": ^8.0.0 || ^9.0.0 || ^10.0.0
     pino-http: ^6.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
   checksum: 10c0/003c21588454e2e9c1f7f7cc1829aec005acaca45f73b29b33da11c20479af811c72089dcdd03e08bdd675373c6563f288124b8566824936bde8f7991bd86c9b
+  languageName: node
+  linkType: hard
+
+"nestjs-request-context@npm:3.0.0":
+  version: 3.0.0
+  resolution: "nestjs-request-context@npm:3.0.0"
+  peerDependencies:
+    "@nestjs/common": ^10.0.0
+  checksum: 10c0/eeaddb2b0dff6065356dad436fd0c86018d0ff0bb1e33f43700d1509cc62d6ebb08c8975430b37d3602eaadd54e2b2888c7424515ae06f3687cc4436ed1b695e
   languageName: node
   linkType: hard
 

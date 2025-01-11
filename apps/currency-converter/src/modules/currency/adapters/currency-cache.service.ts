@@ -6,7 +6,7 @@ import type { ICurrencyCachePort, ICurrencyRate } from '../interfaces';
 @Injectable()
 export class CurrencyCacheService implements ICurrencyCachePort {
   private static readonly CACHE_KEY = 'currency:rate';
-  private static readonly CACHE_TTL = SECONDS_IN_MINUTE * 5; // 5 minutes in milliseconds
+  private static readonly CACHE_TTL = SECONDS_IN_MINUTE * 5; // 5 minutes in seconds
 
   constructor(@Inject(RedisService) private readonly cacheService: RedisService) {}
 

@@ -4,8 +4,12 @@
   "description": "Common",
   "main": "./dist/index.js",
   "dependencies": {
+    "lodash.omit": "^4.5.0",
     "nestjs-pino": "^4.1.0",
     "pino-http": "^10.3.0"
+  },
+  "devDependencies": {
+    "@types/lodash.omit": "^4.5.9"
   },
   "engines": {
     "node": ">=16",
